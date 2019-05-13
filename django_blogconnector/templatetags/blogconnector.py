@@ -44,8 +44,6 @@ def posts(category=None):
 
     posts_html = '\n'.join(posts_list)
 
-    print(posts_html)
-
     return mark_safe(posts_html)
 
 

@@ -1,7 +1,7 @@
 {% load blogconnector %}
 <div class="post" id="{{ post.slug }}">
     <h2 class="post-title">
-        {{ post.title }}
+        {{ post.title|safe }}
     </h2>
     <div class="post-metadata">
         Posted on {{ post.pub_date }} by {{ post.creator }} in {{ post.category.name }}

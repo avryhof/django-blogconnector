@@ -10,5 +10,6 @@ install:
   - pip install coverage
   - pip install codecov
 script:
+  - manage.py import_feed
 after_success:
   - codecov
